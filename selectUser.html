@@ -7,6 +7,17 @@
 	<link rel="stylesheet"  href="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.css" />
 
     <script src="lib/jquery.js"></script>
+	  <script type="text/javascript">  
+   
+		$(document).bind("mobileinit", function()   
+		{   
+		   if (navigator.userAgent.indexOf("Android") != -1)   
+		   {   
+		 $.mobile.defaultPageTransition = 'none';   
+		 $.mobile.defaultDialogTransition = 'none';   
+		   }   
+		});  
+	</script> 
 	<script src="lib/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
 
     <script src='data/foods.json' type='text/javascript'></script>
